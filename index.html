@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Split Bill</title>
+   
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap" rel="stylesheet" />
+    <link rel="icon" href="https://cdn2.iconfinder.com/data/icons/ios7-inspired-mac-icon-set/512/Calculator_512.png">
+</head>
+
+<body>
+    <div class="container">
+        <div class="main">
+            <h3>Split Bill Calculator</h3>
+            <div class=>
+                <span>Bill</span>
+                <div class="first">
+                    <form action="" class="input-container">
+                        <span id="dol-per">$</span>
+                        <input type="text" placeholder="Enter Amount in Dollar" class="foo" id="billTotalInput"
+                            onkeyup="calculateBill()">
+                    </form>
+                </div>
+            </div>
+            <div>
+                <span>Tip</span>
+                <div class="first">
+                    <form action="" class="input-container">
+                        <span id="dol-per">%</span>
+                        <input type="text" placeholder="Enter Tip In Percentage" class="foo" id="tipInput"
+                            onkeyup="calculateBill()">
+                    </form>
+                </div>
+            </div>
+
+            <div class="bottom">
+                <div class="bot-1">
+                    <span>People</span>
+                    <span>Total Per Person</span>
+                </div>
+                <div class="bot-1">
+                    <div>
+                        <button class="btn" onclick="increasePeople()">+</button>
+                        <span id="noOfPeople">1</span>
+                        <button class="btn" onclick="decreasePeople()">-</button>
+                    </div>
+                    <div>
+                        <span id="perpersonTotal" style="font-size: 1.79rem;">$0.00</span>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
